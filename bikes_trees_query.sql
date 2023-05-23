@@ -3,7 +3,7 @@
 WITH trips AS (
     SELECT
       z.zip AS zipcode,
-      COUNT(b.starttime) AS num_of_bike_trips,
+      COUNT(b.starttime) AS num_of_bike_trips
     FROM
       `subtle-poet-379813.nyc_citi_bike_trips.citibike_trips` AS b
     --Joining the stations_and_zipcodes table to bring in zip codes for each station
